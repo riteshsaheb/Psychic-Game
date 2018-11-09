@@ -21,7 +21,7 @@ function userChoiceReset(){
 }
 
 document.onkeyup = function(event){
-    var userGuess = event.key;
+    var userGuess = event.key.toLowerCase();
     userChoiceText.push(userGuess);
     console.log(userGuess);
     console.log(userChoiceText);
